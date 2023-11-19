@@ -1,3 +1,261 @@
-body{
-    background-color: orange;
+@keyframes animateName {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+
+
+*{
+    font-family: 'Roboto', sans-serif;
 }
+body{
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    line-height: 3;
+    font-size: 1.3em;
+    margin: 0;
+}
+section{
+    background-color: black;
+    color: #CCCCCC;
+    /* margin-bottom: 2.3%; */
+}
+.titulo{
+    font-size: 2.8em;
+    margin: 0;
+    color: rgb(230, 109, 109);
+}
+.subtitulo{
+    font-size: 1.8em;
+    margin: 0;
+    color: rgb(241, 190, 190);
+}
+.container-dm{
+    display: flex;
+    justify-content: end;
+}
+.bttn-dm{
+    color: black;
+    position: fixed;
+    top: 7%;
+}
+.img-dm{
+    width: 25px;
+}
+
+.bttn-dm:hover{
+    cursor: pointer;
+}
+.main{ 
+    padding: 0 10%;
+    background-color: #d66767d0;
+}
+.estudiante{
+    font-size: 2.3em;
+    font-weight: lighter;
+    color: #B27800;
+}
+
+a{
+    text-decoration: none;
+}
+.soy {
+    font-size: 3em;
+    color: rgb(223, 118, 32);
+    animation: animateName 2s infinite alternate;
+
+  }
+  
+.nav-ul{
+
+    background-color: #B20093;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-ul> a{
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    transition: all 0.4s;
+}
+.nav-ul> a:hover{
+    background-color: #f1bcea79;
+
+}
+
+.container-section{
+    background-color: rosybrown;
+}
+
+.section-sobre-mi{
+     display: flex;
+    color: #CCCCCC;
+}
+
+.sobre-mi-img{
+    display: flex;
+    align-items: center;
+}
+.bttn-cv{
+    font-size: 1.2em;
+
+    width: 150px;
+    align-self: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #B20093;
+    border-radius: 15px;
+}
+.bttn-cv:hover{
+    background-color: #f1bcea79;
+}
+.bttn-cv:hover a{
+    color: black;
+}
+.bttn-cv > a {
+    color: rgb(240, 233, 233);
+}
+.bttn-enviar:hover{
+    background-color: #f1bcea79;
+    color: black;
+    cursor: pointer;
+}
+.container-sobre-mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-yo{
+    width: 300px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+}
+
+.soy{
+    margin-bottom: 25px;
+    font-size: 4em;
+}
+.section-estudios, .section-cursos, .section-contacto, .section-sobre-mi, .section-skills{
+    padding: 5% 11%;
+    background-color: #003AB2;
+}
+.section-estudios>h3, .section-cursos>h3, .section-contacto>h3{
+    padding-bottom: 50px;
+}
+
+
+.footer{
+    background-color: #B20093;
+    text-align: center;
+    font-size: 1.6em;
+    color: #FFFFF0;
+}
+
+
+.html{
+    color: rgb(240, 20, 20);
+}
+
+.css{
+    color: #0000FF;
+}
+
+.js{
+    color: #FFFF00;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.input{
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #003AB2;
+    border: 0.2px solid rgba(255, 255, 255, 0.781);
+    color: #ffefd3;
+}
+
+.bttn-enviar{
+    width: 300px;
+    margin: 20px 0;
+    padding: 10px 25px;
+    color: white;
+    background-color: #B20093;
+    border-radius: 15px;
+    font-weight: lighter;
+}
+::placeholder {
+    color: #ffefd3b4; /* Cambia este color al que desees para el placeholder */
+  }
+
+  .p-insti{
+    color: #ffd900b7;
+  }
+
+/*------------------------------------------ MODO OSCURO------------------------------------------ */
+.modo-oscuro{
+    background-color: black;
+    color: white;
+}
+
+.modo-oscuro-main{
+    background-color: rgba(80, 65, 65, 0.76);
+}
+.wave-blue path {
+    fill: #000000 !important; 
+}
+.wave-rosa path {
+    fill: rgba(80, 65, 65, 0.76) !important; 
+}
+
+.yo-black{
+    display: none;
+    border: 2px solid white;
+}
+
+.mostrar{
+    display: block;
+}
+
+.ocultar{
+    display: none;
+}
+
+/*------------------------------------------ MODO OSCURO------------------------------------------ */
+
+
+/*------------------------------------------ MEDIAS------------------------------------------ */
+
+/*------------------------------------------ MEDIAS------------------------------------------ */
+
+.repos-container{
+    padding: 50px;
+    background-color: white;
+}
+.progress-bar{
+    font-size: 2em;
+}
+a:hover {
+    text-decoration: none !important; 
+  }
