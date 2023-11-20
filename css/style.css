@@ -21,6 +21,7 @@ article{
     display: flex;
     flex-direction: column;
 }
+
 p{
     line-height: 3;
     font-size: 1.3em;
@@ -32,14 +33,15 @@ section{
     /* margin-bottom: 2.3%; */
 }
 .titulo{
-    font-size: 2.8em;
+    font-size: 3.2em;
     margin: 0;
-    color: rgb(230, 109, 109);
+    color: #c7c538;
 }
+
 .subtitulo{
     font-size: 1.8em;
     margin: 0;
-    color: rgb(241, 190, 190);
+    color: #979514;
 }
 .container-dm{
     display: flex;
@@ -59,7 +61,7 @@ section{
 }
 .main{ 
     padding: 0 10%;
-    background-color: #d66767d0;
+    background-color: #1b8a5162;
 }
 .estudiante{
     font-size: 2.3em;
@@ -78,8 +80,8 @@ a{
   }
   
 .nav-ul{
-
-    background-color: #B20093;
+padding: 0;
+    background-color: #01024b;
     margin: 0;
     display: flex;
     justify-content: space-around;
@@ -91,7 +93,10 @@ a{
     transition: all 0.4s;
 }
 .nav-ul> a:hover{
-    background-color: #f1bcea79;
+    background-color: #B27800;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 
 }
 
@@ -115,21 +120,23 @@ a{
     align-self: center;
     margin-top: 50px;
     padding: 10px;
-    background-color: #B20093;
+    background-color: #8A1B54;
     border-radius: 15px;
 }
 .bttn-cv:hover{
-    background-color: #f1bcea79;
+    background-color: #c907af79;
+    cursor: pointer;
+
 }
 .bttn-cv:hover a{
-    color: black;
+    color: white;
+    text-decoration: none;
 }
 .bttn-cv > a {
     color: rgb(240, 233, 233);
 }
 .bttn-enviar:hover{
-    background-color: #f1bcea79;
-    color: black;
+    background-color: #c907af79;
     cursor: pointer;
 }
 .container-sobre-mi{
@@ -140,7 +147,8 @@ a{
 .img-yo{
     width: 300px;
     margin-bottom: 100px;
-    border: 2px solid black;
+    border: 3px solid black;
+    border-radius: 120px;
 }
 
 .soy{
@@ -149,7 +157,11 @@ a{
 }
 .section-estudios, .section-cursos, .section-contacto, .section-sobre-mi, .section-skills{
     padding: 5% 11%;
-    background-color: #003AB2;
+    background-color: #1B1C8A;
+
+}
+.section-estudios, .section-cursos, .section-contacto, .section-skills{
+    border-radius: 50px 50px 0 0;
 }
 .section-estudios>h3, .section-cursos>h3, .section-contacto>h3{
     padding-bottom: 50px;
@@ -157,19 +169,21 @@ a{
 
 
 .footer{
-    background-color: #B20093;
+    background-color: #01024b;
     text-align: center;
     font-size: 1.6em;
     color: #FFFFF0;
 }
-
+.footer-p{
+    margin: 0;
+}
 
 .html{
     color: rgb(240, 20, 20);
 }
 
 .css{
-    color: #0000FF;
+    color: rgb(0, 183, 255);
 }
 
 .js{
@@ -191,7 +205,7 @@ form{
     width: 300px;
     margin: 10px;
     border-radius: 5px;
-    background-color: #003AB2;
+    background-color: #1B1C8A;
     border: 0.2px solid rgba(255, 255, 255, 0.781);
     color: #ffefd3;
 }
@@ -201,7 +215,7 @@ form{
     margin: 20px 0;
     padding: 10px 25px;
     color: white;
-    background-color: #B20093;
+    background-color: #8A1B54;
     border-radius: 15px;
     font-weight: lighter;
 }
@@ -210,8 +224,11 @@ form{
   }
 
   .p-insti{
-    color: #ffd900b7;
+    color: #ffffffa6;
   }
+.progress-bar{
+    font-size: 2em;
+}
 
 /*------------------------------------------ MODO OSCURO------------------------------------------ */
 .modo-oscuro{
@@ -220,13 +237,13 @@ form{
 }
 
 .modo-oscuro-main{
-    background-color: rgba(80, 65, 65, 0.76);
+    background-color: rgba(85, 83, 83, 0.904);
 }
 .wave-blue path {
     fill: #000000 !important; 
 }
 .wave-rosa path {
-    fill: rgba(80, 65, 65, 0.76) !important; 
+    fill: rgba(85, 83, 83, 0.904) !important; 
 }
 
 .yo-black{
@@ -249,13 +266,34 @@ form{
 
 /*------------------------------------------ MEDIAS------------------------------------------ */
 
-.repos-container{
-    padding: 50px;
-    background-color: white;
-}
-.progress-bar{
-    font-size: 2em;
-}
-a:hover {
-    text-decoration: none !important; 
+
+
+  @media (max-width: 820px){
+    .img-yo{
+        display: none;
+    }
   }
+  /* @media (max-width: 768px){
+    .barra-nav{
+        display: none;
+    }
+    .barra-burguer{
+        display: block;
+    }
+
+  } */
+  @media (max-width: 745px){
+    .redes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-ul{
+        flex-wrap: wrap;
+
+    }
+    .main{
+        padding: 0;
+    }
+  }
+

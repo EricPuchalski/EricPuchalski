@@ -28,25 +28,3 @@ bttnDM.addEventListener('click', () => {
 })
 //---------------------------------------// 
 
-fetch('https://api.github.com/users/EricPuchalski/repos')
-      .then(response => response.json())
-      .then(data => {
-        const reposContainer = document.getElementById('repos-container');
-
-        data.forEach(repo => {
-          // Crear un elemento para cada repositorio
-          const repoElement = document.createElement('div');
-          repoElement.classList.add('repo');
-          repoElement.innerHTML = `
-            <h2>${repo.name}</h2>
-            <p>${repo.description || 'Sin descripción disponible'}</p>
-            <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
-          `;
-
-          // Agregar el elemento del repositorio al contenedor
-          reposContainer.appendChild(repoElement);
-        });
-      })
-      .catch(error => {
-        console.error('Hubo un error al obtener los repositorios:', error);
-      });
