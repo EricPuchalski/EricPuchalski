@@ -11,8 +11,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-body{
-    height: 100%;
+
+html{
+    scroll-behavior: smooth;
 }
 li{
     list-style: none;
@@ -50,14 +51,17 @@ section{
 .bttn-dm{
     color: black;
     position: fixed;
-    top: 7%;
+    top: 8%;
+    margin-right: 5px;
 }
+
 .img-dm{
     width: 25px;
 }
 
 .bttn-dm:hover{
     cursor: pointer;
+    background-color: white;
 }
 .main{ 
     padding: 0 10%;
