@@ -1,6 +1,6 @@
 const main = document.getElementById('main')
 const darkModeButton = document.getElementById('bttnDM')
-const navList  = document.getElementById('ul')
+const navList  = document.getElementById('ul')  
 const blueSvgElements = document.getElementsByClassName('svg-blue');
 const WAVES_BLUE = [...blueSvgElements]
 const sectionElements = document.getElementsByTagName('section');
@@ -13,6 +13,7 @@ const imagenBgBlack = document.getElementById('yo_black')
 const imagenBgBlue = document.getElementById('yo_blue')
 const footer = document.getElementById('footer')
 const svgRosa = document.getElementById('svg-rosa')
+const burguerButton = document.getElementById('burguerBttn')
 
 
 //HACER MODO OSCURO LA APP// 
@@ -38,3 +39,7 @@ darkModeButton.addEventListener('click', () => {
 })
 //---------------------------------------// 
 
+burguerButton.addEventListener('click', ()=> {
+    navList.classList.toggle('mostrar')
+    navList.classList.toggle('modo-hamburguesa')
+})
