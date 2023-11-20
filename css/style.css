@@ -263,6 +263,13 @@ form{
     display: none;
 }
 
+.titles-darkmode{
+    color: grey;
+}
+
+.captions-darkmode{
+    color: rgba(128, 128, 128, 0.705);
+}
 /*------------------------------------------ MODO OSCURO------------------------------------------ */
 
 
