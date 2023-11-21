@@ -14,6 +14,7 @@ const imagenBgBlue = document.getElementById('yo_blue')
 const footer = document.getElementById('footer')
 const svgRosa = document.getElementById('svg-rosa')
 const burguerButton = document.getElementById('burguerBttn')
+const screenWidth = window.innerWidth;
 
 
 //HACER MODO OSCURO LA APP// 
@@ -33,9 +34,13 @@ darkModeButton.addEventListener('click', () => {
     CAPTIONS.forEach(element => {
         element.classList.toggle('captions-darkmode')
     })
-    imagenBgBlack.classList.toggle('mostrar')
+
     imagenBgBlue.classList.toggle('ocultar')
     svgRosa.classList.toggle('wave-rosa')
+    console.log('el ancho de la pantalla es '+screenWidth);
+    if(screenWidth > 768){
+        imagenBgBlack.classList.toggle('mostrar')
+    }
 })
 //---------------------------------------// 
 
