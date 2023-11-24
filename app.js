@@ -14,6 +14,7 @@ const imagenBgBlue = document.getElementById('yo_blue')
 const footer = document.getElementById('footer')
 const svgRosa = document.getElementById('svg-rosa')
 const burguerButton = document.getElementById('burguerBttn')
+const burguerContainer = document.getElementById('burguer-container')
 const screenWidth = window.innerWidth;
 
 
@@ -41,6 +42,8 @@ darkModeButton.addEventListener('click', () => {
     if(screenWidth > 768){
         imagenBgBlack.classList.toggle('mostrar')
     }
+    burguerButton.classList.toggle('modo-oscuro-main')
+    burguerContainer.classList.toggle('modo-oscuro-burguer')
 })
 //---------------------------------------// 
 

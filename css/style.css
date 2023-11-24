@@ -11,16 +11,11 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
 li{
     list-style: none;
-}
-article{
-    display: flex;
-    flex-direction: column;
 }
 
 p{
@@ -33,11 +28,18 @@ section{
     color: #CCCCCC;
     /* margin-bottom: 2.3%; */
 }
+.article{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .titulo{
     font-size: 3.2em;
     margin: 0;
     color: #c7c538;
 }
+
 .nav-ul a:hover {
     text-decoration: none;
 }
@@ -63,7 +65,7 @@ section{
 .bttn-dm{
     color: black;
     position: fixed;
-    top: 8%;
+    top: 11%;
     margin-right: 5px;
 }
 
@@ -292,6 +294,10 @@ form{
 
 .captions-darkmode{
     color: rgba(128, 128, 128, 0.705);
+}
+
+.modo-oscuro-burguer{
+    background-color: rgba(24, 22, 22, 0.904);
 }
 /*------------------------------------------ MODO OSCURO------------------------------------------ */
 
