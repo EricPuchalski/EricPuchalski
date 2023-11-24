@@ -47,7 +47,9 @@ darkModeButton.addEventListener('click', () => {
 })
 //---------------------------------------// 
 
+// MODO HAMBURGUESA //
 burguerButton.addEventListener('click', ()=> {
     navList.classList.toggle('mostrar')
     navList.classList.toggle('modo-hamburguesa')
 })
+//---------------------------------------// 

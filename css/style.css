@@ -326,6 +326,9 @@ form{
     .main{
         padding: 0 5%;
     }
+    .footer{
+        font-size: 1.3em;
+    }
   }
   @media (max-width: 745px){
     .redes{
@@ -339,6 +342,18 @@ form{
     }
 
   }
+  @media (max-width: 350px){
+    .main{
+        padding: 0;
+    }
+    .section-contacto{
+        padding: 5px 10px;
+    }
+    .section-contacto input, .section-contacto textarea,  .bttn-enviar{
+        width: 250px;
+    }
+  }
+
 
 
 
